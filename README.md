@@ -2,8 +2,7 @@
 <img src="pagina web.png" />
 
 # Proyecto Earth Traveling
-
-Este proyecto consiste en realizar una pagina web y diseñarla al gusto, en este caso hicimos una pagina web relacionada con viajes.
+Esta pagina web tiene como proposito ofrecer viajes en todo el territorio de nariño y asegurar un comodo y seguro interfaz de usuario.
 
 ## Empezando
 
