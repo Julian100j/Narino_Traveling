@@ -20,12 +20,12 @@ Para el ejecutamiento del codigo HTML se debe ingresar al link de la pagina web 
 
 ## Despliegue (Deployment)
 
-Agregue notas adicionales sobre cómo implementar esto en un sistema en vivo
+Este codigo al ser desarrollado en HTML sirve para hacer la parte del frontend en este sitio de viajes el cual va facilitar a los usuarios la interaccion con la pagina.
 
 
 ## Construido con
 
-Dropwizard : el marco web utilizado
+HTML: lenguaje de marcado para la elaboracion de paginas web.
 
 
 ## Versionado
@@ -37,11 +37,7 @@ Recomendamos utilizar la version de eclipse "4.29" y la version de git  2.41.0. 
 * **Julian Andres Ceballos, Santiago Luna y Nicolas Maya** 
 
 
-## Licencia
-
-Este proyecto tiene la licencia MIT; consulte el archivo LICENSE.md para obtener más detalles.
-
 ## Expresiones de gratitud (Acknowledgments)
 
-* Muchas gracias por utilizar este proyecto hecho en java
-* Agardecemos a nuestros profesores Javier Mauricio López Moreno y Gustavo Willyn Sánchez Rodriguez por sus enseñanzas.
+* Muchas gracias por utilizar este codigo de HTML desarrollado para un sitio web de viajes.
+* Agardecemos a nuestro profesor Gustavo Willyn Sánchez Rodriguez por sus enseñanzas.
