@@ -14,23 +14,6 @@ Para inciar a utilizar los programas hechos por nosotros se debe descargar el ar
 Tener conexcion a internet
 Tener dispositivo electronico (Celular,computador o tablet) y contar con un buen navegador web para una buena ejecucion del codigo.
 
-
-### Instalación
-
-
-
-```
-https://eclipseide.org/
-```
-
-
-
-```
-https://git-scm.com/
-```
-
-Al iniciar el programa eclipse se debe abrir la terminal y clonar el repositorio "Apo2" con este link "https://github.com/Julian100j/Pagina_web.git" para acceder a los componentes de la pagina en desarrollo.
-
 ## Ejecutando las pruebas
 
 Para probar los programas realizados debes darle click en la flecha verde de "Run" y digitar los datos que te pida la interfaz para poder disfrutar adecuadamente el procedimiento.
