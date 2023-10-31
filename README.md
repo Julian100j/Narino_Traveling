@@ -3,15 +3,16 @@
 
 # Proyecto Java 
 
-Este proyecto consiste en realizar algoritmos en el lenguaje de promgracion Java con el fin de desarrolar programas en los cuales se apliquen los temas vistos en calse de Programacion "Apo2" como lo son: Ciclos,Funciones,Contenedoras y Condicionales.
+Este proyecto consiste en realizar una pagina web y diseñarla al gusto, en este caso hicimos una pagina web relacionada con viajes.
 
 ## Empezando
 
-Para inciar a utilizar los programas hechos por nosotros se debe descargar El IDE "Eclipse for developers" para poder acceder de manera exitosa.
+Para inciar a utilizar los programas hechos por nosotros se debe descargar el archivo index.html y tendar la informacion de nuestra pagina web.
 
 ### Requisitos previos
 
-Instalar IDE "Eclipse for developers" y Tener instalado Git.
+Tener conexcion a internet
+Tener dispositivo electronico (Celular,computador o tablet)
 
 ```
 Paguina de descarga IDE "Eclipse for developers": https://eclipseide.org/
