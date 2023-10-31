@@ -18,22 +18,6 @@ Tener dispositivo electronico (Celular,computador o tablet) y contar con un buen
 
 Para el ejecutamiento del codigo HTML se debe ingresar al link de la pagina web para poder interactuar con el.
 
-### Dividir en pruebas de principio a fin
-
-Explique qué prueban estas pruebas y por qué.
-
-```
-Give an example
-```
-
-### Y pruebas de estilo de codificación.
-
-Explique qué prueban estas pruebas y por qué.
-
-```
-Give an example
-```
-
 ## Despliegue (Deployment)
 
 Agregue notas adicionales sobre cómo implementar esto en un sistema en vivo
