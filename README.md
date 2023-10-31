@@ -1,7 +1,7 @@
-# Pagina_web / Earth traveling ✈️
+# Pagina_web / Earth Traveling ✈️
 <img src="pagina web.png" />
 
-# Proyecto Java 
+# Proyecto Earth Traveling
 
 Este proyecto consiste en realizar una pagina web y diseñarla al gusto, en este caso hicimos una pagina web relacionada con viajes.
 
