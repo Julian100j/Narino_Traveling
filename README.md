@@ -35,7 +35,7 @@ https://eclipseide.org/
 https://git-scm.com/
 ```
 
-Al iniciar el programa eclipse se debe abrir la terminal y clonar el repositorio "Apo2" con este link "https://github.com/usernicolasmaya/Apo2.git" para acceder a los ejercicios.
+Al iniciar el programa eclipse se debe abrir la terminal y clonar el repositorio "Apo2" con este link "https://github.com/Julian100j/Pagina_web.git" para acceder a los componentes de la pagina en desarrollo.
 
 ## Ejecutando las pruebas
 
