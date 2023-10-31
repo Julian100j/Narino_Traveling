@@ -16,7 +16,7 @@ Tener dispositivo electronico (Celular,computador o tablet) y contar con un buen
 
 ## Ejecutando las pruebas
 
-Para probar los programas realizados debes darle click en la flecha verde de "Run" y digitar los datos que te pida la interfaz para poder disfrutar adecuadamente el procedimiento.
+Para el ejecutamiento del codigo HTML se debe ingresar al link de la pagina web para poder interactuar con el.
 
 ### Dividir en pruebas de principio a fin
 
