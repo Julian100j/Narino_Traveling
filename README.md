@@ -2,7 +2,8 @@
 <img src="pagina web.png" />
 
 # Proyecto Earth Traveling
-Esta pagina web tiene como proposito ofrecer viajes en todo el territorio de nariño y asegurar un comodo y seguro interfaz de usuario.
+
+Este proyecto consiste en realizar una pagina web y diseñarla al gusto, en este caso hicimos una pagina web relacionada con viajes.
 
 ## Empezando
 
@@ -16,6 +17,22 @@ Tener dispositivo electronico (Celular,computador o tablet) y contar con un buen
 ## Ejecutando las pruebas
 
 Para el ejecutamiento del codigo HTML se debe ingresar al link de la pagina web para poder interactuar con el.
+
+### Dividir en pruebas de principio a fin
+
+Explique qué prueban estas pruebas y por qué.
+
+```
+Give an example
+```
+
+### Y pruebas de estilo de codificación.
+
+Explique qué prueban estas pruebas y por qué.
+
+```
+Give an example
+```
 
 ## Despliegue (Deployment)
 
