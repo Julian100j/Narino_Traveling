@@ -12,14 +12,8 @@ Para inciar a utilizar los programas hechos por nosotros se debe descargar el ar
 ### Requisitos previos
 
 Tener conexcion a internet
-Tener dispositivo electronico (Celular,computador o tablet)
+Tener dispositivo electronico (Celular,computador o tablet) y contar con un buen navegador web para una buena ejecucion del codigo.
 
-```
-Paguina de descarga IDE "Eclipse for developers": https://eclipseide.org/
-
-Paguina de descarga de Git: https://git-scm.com/
-
-```
 
 ### Instalación
 
