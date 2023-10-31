@@ -2,7 +2,7 @@
 <img src="pagina web.png" />
 
 # Proyecto Earth Traveling
-Esta pagina web tiene como proposito ofrecer viajes en todo el territorio de nariño.
+Esta pagina web tiene como proposito ofrecer viajes en todo el territorio de nariño y asegurar un comodo y seguro interfaz de usuario.
 
 ## Empezando
 
