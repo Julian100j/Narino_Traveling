@@ -1,5 +1,4 @@
-# Pagina_web
-# Earth traveling
+# Pagina_web / Earth traveling ✈️
 <img src="pagina web.png" />
 
 # Proyecto Java 
