@@ -20,18 +20,18 @@ Para el ejecutamiento del codigo HTML se debe ingresar al link de la pagina web 
 
 ## Despliegue (Deployment)
 
-Este codigo al ser desarrollado en HTML sirve para hacer la parte del frontend en este sitio de viajes el cual va facilitar a los usuarios la interaccion con la pagina.
+Este codigo al ser desarrollado en HTML y JavaScript sirve para hacer la parte del frontend en este sitio de viajes el cual va facilitar a los usuarios la interaccion con la pagina.
 
 
 ## Construido con
 
 HTML: lenguaje de marcado para la elaboracion de paginas web.
+JavaScript: Lenguaje empleado para elaboracion de la pagina web.
 
 
 ## Versionado
 
-Recomendamos utilizar la version de eclipse "4.29" y la version de git  2.41.0. para un rendimiento adecuado del programa.
-
+Recomendamos utilizar la version de windows 7 a 11 y tener la ultima version de Google Chrome.
 ## Autores
 
 * **Julian Andres Ceballos, Santiago Luna y Nicolas Maya** 
