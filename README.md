@@ -1,5 +1,5 @@
 # Pagina_web / Nariño Traveling ✈️
-<img src="pagina web.png" />
+<img src="portada.png" />
 
 # Proyecto Nariño Traveling
 
