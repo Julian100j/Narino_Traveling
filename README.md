@@ -1,9 +1,9 @@
-# Pagina_web / Earth Traveling ✈️
+# Pagina_web / Nariño Traveling ✈️
 <img src="pagina web.png" />
 
-# Proyecto Earth Traveling
+# Proyecto Nariño Traveling
 
-Este proyecto consiste en realizar una pagina web y diseñarla al gusto, en este caso hicimos una pagina web relacionada con viajes.
+Esta pagina web tiene como proposito ofrecer viajes en todo el departamento de nariño con una comoda y facil interfaz de usuario que permite encontrar un buen viaje a tu gusto.
 
 ## Empezando
 
