@@ -7,7 +7,7 @@ Esta pagina web tiene como proposito ofrecer viajes en todo el departamento de n
 
 ## Empezando
 
-Para inciar a utilizar los programas hechos por nosotros se debe descargar el archivo index.html y tendar la informacion de nuestra pagina web.
+Para inciar a utilizar los programas hechos por nosotros se debe descargar el archivo index.html o entrar al link "http://127.0.0.1:3000/Pagina_web/index.html" y asi tener acceso a la informacion de nuestra pagina web.
 
 ### Requisitos previos
 
