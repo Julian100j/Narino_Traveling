@@ -7,7 +7,7 @@ Sitio web turístico estático de Nariño — HTML5, CSS3 y JavaScript con Boots
 
 ## Empezando
 
-Para probar la pagina web entra al link "https://narino-traveling.vercel.app/" y asi tienes acceso a la informacion de nuestra pagina web.
+Para probar la pagina web entra al link " https://narino-traveling.vercel.app/ " y asi tienes acceso a la informacion de nuestra pagina web.
 
 ### Requisitos previos
 
