@@ -71,6 +71,8 @@ jQuery(document).ready(function($) {
         
         $(function() {
   
+        var transitioning = false;
+
         function showSlide(n) {
             // n is relative position from current slide
           
@@ -78,7 +80,13 @@ jQuery(document).ready(function($) {
             $body.unbind("mousewheel");
           
             // increment slide number by n and keep within boundaries
-            currSlide = Math.min(Math.max(0, currSlide + n), $slide.length-1);
+            var nextSlide = Math.min(Math.max(0, currSlide + n), $slide.length-1);
+            if (nextSlide === currSlide || transitioning) {
+                return;
+            }
+            currSlide = nextSlide;
+            transitioning = true;
+            setTimeout(function() { transitioning = false; }, 750);
             
             var displacment = window.innerWidth*currSlide;
             // translate slides div across to appropriate slide
@@ -88,7 +96,7 @@ jQuery(document).ready(function($) {
             
             // change active class on link
             $('nav a.active').removeClass('active');
-            $($('a')[currSlide]).addClass('active');
+            $($('nav a')[currSlide]).addClass('active');
             
         }
       
@@ -128,6 +136,44 @@ jQuery(document).ready(function($) {
         
         // add event listener for mousescroll
         $body.bind('false', mouseEvent);
+
+        // keyboard navigation (left/right arrows)
+        $(document).on('keydown', function(e) {
+            if ($(e.target).is('input, textarea, select, button')) {
+                return;
+            }
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') {
+                showSlide(1);
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') {
+                showSlide(-1);
+            }
+        });
+
+        // touch swipe navigation (horizontal swipes only)
+        var touchStartX = null;
+        var touchStartY = null;
+        $('body').on('touchstart', function(e) {
+            var t = e.originalEvent.touches[0];
+            touchStartX = t.clientX;
+            touchStartY = t.clientY;
+        });
+        $('body').on('touchend', function(e) {
+            if (touchStartX === null || touchStartY === null) {
+                return;
+            }
+            var t = e.originalEvent.changedTouches[0];
+            var dx = t.clientX - touchStartX;
+            var dy = t.clientY - touchStartY;
+            touchStartX = null;
+            touchStartY = null;
+            if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy)) {
+                return;
+            }
+            if ($(e.target).closest('.owl-carousel, #image-slider, #thumbnail, input, textarea').length) {
+                return;
+            }
+            showSlide(dx < 0 ? 1 : -1);
+        });
     })        
 
 

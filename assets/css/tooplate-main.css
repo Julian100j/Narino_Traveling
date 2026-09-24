@@ -222,6 +222,10 @@ nav a {
 nav a.active {
   background-color: rgba(0,0,0,0.8);
 }
+nav a:focus-visible {
+  outline: 2px solid #faf5b2;
+  outline-offset: 3px;
+}
 nav a::before {
   content: "";
   position: absolute;
@@ -245,7 +249,7 @@ nav a::before {
 	width: 15%;
 }
 .logo h1 {
-  font-size: 24px;
+  font-size: clamp(18px, 1.6vw, 24px);
   text-transform: uppercase;
   font-weight: 900;
   color: #111;
@@ -254,11 +258,14 @@ nav a::before {
   position: absolute;
   transform: translate(-50%, -50%);
 }
-.logo h2 {
-  display: none;
+.logo h1 .brand-sub {
+  display: block;
+}
+.logo:focus-within {
+  outline: none;
 }
 .slides {
-  width: 500vw;
+  width: 400vw;
   height: 100vh;
   -webkit-transition: -webkit-transform 0.8s ease;
   transition: -webkit-transform 0.8s ease;
@@ -401,20 +408,17 @@ nav a::before {
 }
 .slide-caption h2 {
   margin-top: 0px;
-  font-size: 60px;
+  font-size: clamp(2.25rem, 5.5vw, 60px);
   text-transform: uppercase;
   font-weight: 900;
   color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
 }
 
 
 
 
 /* Slide 2 Style */
-.second-content {
-	top: 180%!important;
-	transform: translateY(-180%);
-}
 #tabs {
   float: right;
   margin-right: 0px;
@@ -455,15 +459,12 @@ nav a::before {
 }
 #tabs ul .ui-tabs-active span {
   background: #faf5b2;
-  border: #faf5b2;
-  line-height: 90px;
-  border-bottom: none;
+  border: 3px solid #faf5b2;
+  line-height: 84px;
+  color: #1e1e1e;
 }
 #tabs ul .ui-tabs-active a {
   color: #000;
-}
-#tabs ul .ui-tabs-active span {
-  color: #1e1e1e;
 }
 .tabs-content {
   margin-left: 60px;
@@ -475,7 +476,7 @@ nav a::before {
   padding: 60px;
 }
 .tabs-content h2 {
-  font-size: 29px;
+  font-size: clamp(1.25rem, 2.4vw, 29px);
   text-transform: uppercase;
   font-weight: 900;
   color: #1e1e1e;
@@ -495,17 +496,41 @@ nav a::before {
 
 
 
-/* Slide 3 Style */
-.third-content {
-	top: 120%!important;
-	transform: translateY(-120%);
+/* Section headings (galería) */
+.section-heading {
+  text-align: center;
+  margin: 0px 0px 20px;
 }
+.section-heading h2 {
+  font-size: clamp(1.25rem, 2.4vw, 29px);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 0px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+}
+.section-heading span {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #faf5b2;
+  letter-spacing: 1px;
+}
+
+/* Slide 3 Style */
 .third-slide a {
   text-decoration: none;
 }
 .featured-item {
-  transition: all 0.5s;
+  transition: all 0.4s;
   text-align: left;
+  background-color: transparent;
+  border-radius: 4px;
+}
+.featured-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
 }
 .featured-item img {
   width: 100%;
@@ -553,11 +578,6 @@ nav a::before {
 
 
 /* Slide 4 Style */
-.fourth-content {
-	top: 140%!important;
-  height: 100%;
-	transform: translateY(-140%);
-}
 #contact {
   text-align: center;
   margin: 0 auto;
@@ -567,7 +587,7 @@ nav a::before {
   background-color: rgba(0,0,0,0.9);
 }
 #contact h2 {
-  font-size: 29px;
+  font-size: clamp(1.25rem, 2.4vw, 29px);
   text-transform: uppercase;
   font-weight: 900;
   color: #fff;
@@ -617,6 +637,9 @@ nav a::before {
   border-color: #faf5b2;
   color: #1e1e1e;
 }
+#contact button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(250, 245, 178, 0.6);
+}
 
 
 
@@ -625,100 +648,105 @@ nav a::before {
 @media (max-width: 991px) {
 
   .slides .slide .content {
-	width: 100%;
-	height: 90%;
-	left: 0;
+    width: 100%;
+    height: 76%;
+    left: 0;
+    top: 110px;
   }
-  .second-content {
-	top: 250%!important;
-	transform: translateY(-250%);
-  }
-  .third-content {
-	top: 140%!important;
-	transform: translateY(-140%);
-  }
-  .fourth-content {
-	top: 220%!important;
-	transform: translateY(-220%);
+
+  /* Barra superior: logo a la izquierda + iconos a la derecha */
+  .logo {
+    width: 150px;
+    height: 100px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .logo h1 {
-    display: none;
-  }
-  .logo h2 {
-  	margin-top: 0px;
-    line-height: 100px;
-    height: 100px;
-    width: 15vw;
-    top: 0;
-    left: 0;
-    z-index: 999999;
-    position: fixed;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #111;
-    display: inline-block;
+    position: static;
+    transform: none;
+    display: block;
+    font-size: 15px;
+    line-height: 1.25;
     text-align: center;
-    background-color: #faf5b2;
+    white-space: nowrap;
+  }
+  .logo h1 .brand-sub {
+    display: block;
   }
   nav {
-    top: 0vh;
+    top: 0;
+    left: 150px;
+    right: 0;
+    width: auto;
+    margin-left: 0;
     height: 100px;
-    width: 85vw;
-    margin-left: 15vw;
+    padding: 0 10px;
   }
   nav ul {
+    position: static;
+    transform: none;
     flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
   }
   nav ul li {
-    display: inline;
-    margin: 0px;
+    display: inline-block;
+    margin: 0 4px;
   }
   nav ul li img {
-	width: 35%;
+    width: 26px;
   }
-  nav ul li em {
-    display: none;
+  nav em {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
   }
   nav a {
-  	text-align: center;
-	  width: 60px;
-	  height: 60px;
-    line-height: 30px;
+    text-align: center;
+    width: auto;
+    min-width: 64px;
+    height: auto;
+    padding: 8px 6px;
+    line-height: normal;
     display: inline-block;
   }
-  .second-slide {
-    top: 140px;
+  nav a.active {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 -3px 0 #faf5b2;
   }
-  .slide-caption h2 {
-  	font-size: 48px;
+  nav a.active em {
+    color: #faf5b2;
+  }
+
+  .slide-caption {
+    padding-left: 30px;
+    right: 30px;
   }
   .tabs-content {
     width: auto;
     text-align: center;
     margin: 0px 30px;
-    padding: 20px;
+    padding: 24px;
   }
   .tabs-content p {
     margin-top: 20px;
   }
-  #tabs ul li {
-    display: inline-block;
-    margin: 0px 10px;
+  #tabs {
+    float: none;
+    width: 100%;
   }
   #tabs ul {
     float: none;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     width: 100%;
     text-align: center;
   }
-  #thumbnail ul li {
-    max-width: 80px;
-    max-height: 80px;
-    margin-left: 10px;
-  }
-  .slide-caption {
-    padding-left: 30px;
+  #tabs ul li {
+    display: inline-block;
+    margin: 0px 10px;
   }
   #tabs ul li span {
     width: 60px;
@@ -727,38 +755,134 @@ nav a::before {
     line-height: 54px;
   }
   #tabs ul .ui-tabs-active span {
-    line-height: 60px;
+    line-height: 54px;
+  }
+  #thumbnail ul li {
+    max-width: 80px;
+    max-height: 80px;
+    margin-left: 10px;
   }
   .featured-item {
-    padding: 30px 15px;
+    padding: 20px 15px;
   }
   .owl-dots {
-    margin-top: 10px;
-    padding-bottom: 30px;
+    margin-top: 8px;
+    padding-bottom: 12px;
   }
-  .tabs-content h2 {
-    font-size: 21px;
+  #contact {
+    margin-bottom: 40px;
+    padding: 30px;
   }
-  .third-slide {
-    text-align: center;
-    margin: 0px;
+  #contact h2 {
+    margin-bottom: 30px;
   }
-  .fourth-slide {
-    margin-left: 0;
-    top: 0;
-    transform: translateY(0%);
-    margin-top: 140px;
-  }
-  .contact-form {
-    padding: 20px;
-  }
-  .contact-form h2 {
-    font-size: 29px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #fff;
-    margin-top: 0px;
-    margin-bottom: 20px;
-  }
+}
 
+@media (max-width: 767px) {
+  .tabs-content {
+    margin: 0px 16px;
+    padding: 20px 16px;
+  }
+  #contact {
+    padding: 24px 18px;
+    margin-bottom: 30px;
+  }
+  #contact input,
+  #contact textarea {
+    margin-bottom: 18px;
+  }
+  #contact h2 {
+    margin-bottom: 24px;
+  }
+  .section-heading {
+    margin-bottom: 12px;
+  }
+  .featured-item {
+    padding: 14px 10px;
+  }
+  .slide-caption {
+    right: 18px;
+    padding-left: 18px;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo {
+    width: 112px;
+    padding: 0 8px;
+  }
+  .logo h1 {
+    font-size: 13px;
+    white-space: normal;
+  }
+  .logo h1 .brand-sub {
+    display: none;
+  }
+  nav {
+    left: 112px;
+    padding: 0 4px;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li img {
+    width: 24px;
+  }
+  nav em {
+    display: none;
+  }
+  nav a {
+    min-width: 46px;
+    padding: 8px 2px;
+  }
+  .slides .slide .content {
+    top: 106px;
+    height: 80%;
+  }
+  #thumbnail {
+    bottom: 16px;
+    right: 12px;
+  }
+  #thumbnail ul li {
+    max-width: 58px;
+    max-height: 58px;
+    margin-left: 6px;
+    border-width: 3px;
+  }
+  #thumbnail ul li.active {
+    border-width: 3px;
+  }
+  .tabs-content {
+    margin: 0px 10px;
+    padding: 18px 14px;
+  }
+  .tabs-content p {
+    margin-top: 14px;
+    font-size: 13px;
+  }
+  #tabs ul li {
+    margin: 0px 6px;
+  }
+  #tabs ul li span {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 44px;
+  }
+  #tabs ul .ui-tabs-active span {
+    line-height: 44px;
+  }
+  .owl-dots {
+    margin-top: 4px;
+    padding-bottom: 8px;
+  }
+  #contact {
+    padding: 22px 14px;
+  }
+  .slide-caption h6 {
+    font-size: 12px;
+  }
+  .featured-item h4 {
+    font-size: 15px;
+  }
 }
