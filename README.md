@@ -1,6 +1,6 @@
 # Pagina_web / Nariño Traveling ✈️
 <img src="portada.png" />
-dsdsd
+
 # Proyecto Nariño Traveling
 
 Sitio web turístico estático de Nariño — HTML5, CSS3 y JavaScript con Bootstrap 4, jQuery, Owl Carousel y Font Awesome. Diseño responsive con 4 secciones, desplegado en Vercel
