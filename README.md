@@ -3,7 +3,7 @@
 dsdsd
 # Proyecto Nariño Traveling
 
-Esta pagina web tiene como proposito ofrecer viajes en todo el departamento de nariño con una comoda y facil interfaz de usuario que permite encontrar un buen viaje a tu gusto.
+Sitio web turístico estático de Nariño — HTML5, CSS3 y JavaScript con Bootstrap 4, jQuery, Owl Carousel y Font Awesome. Diseño responsive con 4 secciones, desplegado en Vercel
 
 ## Empezando
 
